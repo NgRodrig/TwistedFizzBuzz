@@ -17,11 +17,9 @@ namespace TwistedFizzBuzz
 
         public static string RichRed(RichResponse RichRed)
         {
-            List<string> tokens = new();
-            tokens.Add(RichRed.Word);
+            List<string> tokens = new() { RichRed.Word };
 
-            List<int> divisors = new();
-            divisors.Add(RichRed.Multiple);
+            List<int> divisors = new() { RichRed.Multiple };
 
             return GeneralUsage(0, 100 , divisors, tokens);
         }
